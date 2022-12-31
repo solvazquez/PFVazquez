@@ -1,0 +1,83 @@
+@mixin margen ($arriba,$abajo,$derecha,$izquierda){
+    margin-top: $arriba;
+    margin-bottom: $abajo;
+    margin-right: $derecha;
+    margin-left: $izquierda;
+}
+
+.titulos{
+    color: white;
+    font-weight: bolder;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-size: 50px;
+    text-align: left;
+    @include margen(20px, 20px, 20px, 20px)
+}
+
+.imgclasicos{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    @include margen(10px, 10px, 10px, 20px)
+}
+
+.mainc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .divc{
+        text-align: center;
+        width: 208px;
+        color: white;
+        font-size: large;
+        font-family: "ZenAntiqueSoft-Regular";
+        line-height: normal;
+        .imgc{
+            width: 208px;
+            height: 320px;
+            border:double 2px white;
+            opacity: 1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &:hover .precio{
+            background: #a59dc7;
+        }
+        .precio{
+            text-align: center;
+            width: 208px;
+            color: black;
+            font-size: large;
+            transition:all .3s ease-in-out;
+        }
+    }
+}
+
+.precio{
+    background-color: #e2cba2;
+    transition:all .3s ease-in-out;
+    margin: none !important;
+    border-radius: 30px !important;
+    color: black;
+    line-height: normal;
+}
+
+.proxima { 
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 20px;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: white;
+}
+
+.link{
+    background-color: #e2cba2;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}

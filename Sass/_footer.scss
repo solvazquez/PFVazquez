@@ -1,0 +1,31 @@
+footer{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        width: 100%;
+        .menu2{
+            background-color:white;
+            list-style: none;
+            width: 100%;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 20px;
+            .itemfooter{
+                display: inline-block;
+                position: relative;
+                font-size: 100%;
+                text-align: center;
+                a{
+                    color: #1d345d;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

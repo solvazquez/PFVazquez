@@ -1,0 +1,274 @@
+@mixin text ($color,$familia,$tamanio,$margen){
+    color: $color;
+    font-family: $familia;
+    font-size: $tamanio;
+    margin: $margen;
+}
+
+.titulos{
+    @include text(white, "ZenAntiqueSoft-Regular", 50px, 20px);
+    text-align: left;
+    font-weight: bolder;
+}
+
+.proxima { 
+    @include text(white, "ZenAntiqueSoft-Regular", 20px, 5px);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.containerSociedad {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-areas: 
+    "libro"
+    "text"
+    "foto";
+    .libro{
+        grid-area: libro; 
+        align-items: center;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        .imgLectura{
+            border: solid 15px white;
+            border-radius: 15px;
+            width: 80%;
+            height: auto;
+            margin: 10px;
+        }
+    }
+    .mainSociedad{
+        grid-area: text; 
+        text-align: center;
+        border-radius: 20px;
+        background-color: #e2cba2;
+        padding: 2rem;
+        width: auto;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: black;
+        align-items: center;
+        align-content: center;
+        line-height: normal;
+        .textSociedad{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .nombreLecturaActual{
+            color:#1d345d;
+            font-family: "ZenAntiqueSoft-Regular";
+            margin-top: 5px;
+            margin-bottom: none !important;
+            font-size: 40px;
+        }
+        .autorLecturaActual{
+            color:#1d345d;
+            font-family: "ZenAntiqueSoft-Regular";
+            margin-top: none !important;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+        .infoSociedad2{
+            color: black;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .proximaReunion{
+            text-decoration: underline;
+            font-weight: bold;
+            color: black;
+            margin-top: 40px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .foto{
+        grid-area: foto; 
+        align-items: center;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        .imgLectura{
+            border: solid 15px white;
+            border-radius: 15px;
+            width: 80%;
+            height: auto;
+            margin: 10px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .containerSociedad {
+        display: grid;
+        grid-template-areas:
+        "libro text foto";    }
+}
+
+@media (min-width: 1000px) {
+    .containerSociedad {
+        display: grid;
+        grid-template-areas:
+        "libro text text foto";    }
+}
+
+.container {  
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-areas:
+      "libro1"
+      "libro2"
+      "libro3" 
+      "libro4";
+    .libro1 { 
+        grid-area: libro1;
+        background-color: silver;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: #1d345d;
+        .textProxima{
+            color: #1d345d;
+            margin-top: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "ZenAntiqueSoft-Regular";
+        }
+        .imgLectura2{
+            border: solid 5px white;
+            border-radius: 15px;
+            width: 70%;
+            height: auto;
+            opacity: 0.6;
+            align-self: center;
+        }
+        &:hover .imgLectura2{
+            opacity: 1;
+            border: none;
+        }
+    }
+    .libro2 {
+        grid-area: libro2; 
+        background-color: silver;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: #1d345d;
+        .textProxima{
+            color: #1d345d;
+            margin-top: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "ZenAntiqueSoft-Regular";
+        }
+        .imgLectura2{
+            border: solid 5px white;
+            border-radius: 15px;
+            width: 70%;
+            height: auto;
+            opacity: 0.6;
+            align-self: center;
+        }
+        &:hover .imgLectura2{
+            opacity: 1;
+            border: none;
+        }
+    }
+    .libro3 {
+        grid-area: libro3; 
+        background-color: silver;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: #1d345d;
+        .textProxima{
+            color: #1d345d;
+            margin-top: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "ZenAntiqueSoft-Regular";
+        }
+        .imgLectura2{
+            border: solid 5px white;
+            border-radius: 15px;
+            width: 70%;
+            height: auto;
+            opacity: 0.6;
+            align-self: center;
+        }
+        &:hover .imgLectura2{
+            opacity: 1;
+            border: none;
+        }
+    }
+    .libro4 {
+        grid-area: libro4; 
+        background-color: silver;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: #1d345d;
+        .textProxima{
+            color: #1d345d;
+            margin-top: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "ZenAntiqueSoft-Regular";
+        }
+        .imgLectura2{
+            border: solid 5px white;
+            border-radius: 15px;
+            width: 70%;
+            height: auto;
+            opacity: 0.6;
+            align-self: center;
+        }
+        &:hover .imgLectura2{
+            opacity: 1;
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+        "libro1 libro2"
+        "libro3 libro4";   }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+        "libro1 libro2 libro3 libro4";    }
+}
+
+.margenformulario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

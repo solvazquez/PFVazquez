@@ -1,0 +1,571 @@
+/* GENERALES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #1d345d;
+    font-size: large;
+}
+
+header{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo1{
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+nav{
+    width: 100%;
+}
+
+.menu{
+    background-color: white;
+    padding: 0%;
+    list-style: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu .item {
+    display: inline-block;
+    position: relative;
+    font-size: 150%;
+    text-align: center inline;
+}
+
+.menu .item a{
+    color: #1d345d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+footer{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu2{
+    background-color:white;
+    list-style: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu2 .itemfooter{
+    display: inline-block;
+    position: relative;
+    font-size: 100%;
+    text-align: center;
+}
+
+.menu2 .itemfooter a{
+    color: #1d345d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.link{
+    background-color: #e2cba2;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* TEXTO */
+
+@font-face{
+    font-family: "ZenAntiqueSoft-Regular";
+    src: url(./ZenAntiqueSoft-Regular.ttf);
+}
+
+.titulos{
+    color: white;
+    font-weight: bolder;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-size: 50px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textVenta{
+    color: white;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-size: 200%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.precio{
+    background-color: #e2cba2;
+    transition:all .3s ease-in-out;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+.textSociedad{
+    font-size: 30px;
+    color: white;
+}
+
+.nombreLecturaActual{
+    color:#1d345d;
+    font-family: "ZenAntiqueSoft-Regular";
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.autorLecturaActual{
+    color:#1d345d;
+    font-family: "ZenAntiqueSoft-Regular";
+    margin-top: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.infoSociedad1{
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.proximaReunion{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.proxima { 
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 20px;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: white;
+}
+
+.textProxima{
+    color: #1d345d;
+    margin-top: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "ZenAntiqueSoft-Regular";
+}
+
+.ubicaciones{
+    background-color: #e2cba2;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: black;
+    font-size: large;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.ubiinfo{
+    background-color: none;
+    color: white;
+    font-style: none;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.info{
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.infoSociedad2{
+    color: black;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.textTrabajar{
+    color:white;
+    font-family: "ZenAntiqueSoft-Regular";
+    margin-top: none;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.email{
+    background-color: #e2cba2;
+    overflow: hidden;
+    display: inline;
+    transition:all .3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: black;
+}
+
+
+/* IMÁGENES */
+
+.imgclasicos{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imgHome{
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.imgc{
+    width: 208px;
+    height: 320px;
+    border:double 2px white;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgLectura{
+    border: solid 15px white;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    margin: 10px;
+}
+
+.imgLectura2{
+    border: solid 5px white;
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    opacity: 0.6;
+    align-self: center;
+}
+
+.mapa{
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.imgAbout{
+    border: solid 15px white;
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Formulario */
+
+.formulario{
+    background-color: white;
+    color: #1d345d;
+    margin:20px;
+    padding: 10px;
+    border:200px #e2cba2;
+    border-radius: 15px;
+}
+
+
+/* FLEX */
+/* Utilizado en index.html y en venta.html */
+
+.mainc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divc{
+    margin: 5px;
+    text-align: center;
+    width: 208px;
+    color: white;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.divc.precio{
+    margin: 5px;
+    text-align: center;
+    width: 208px;
+    color: white;
+    font-size: large;
+    margin-bottom: 20px;
+    transition:all .3s ease-in-out;
+}
+
+
+/* Animaciones, transformaciones y transiciones */
+
+.divc:hover .precio{
+    background: #a59dc7;
+}
+
+.libro1:hover .imgLectura2{
+    opacity: 1;
+    border: none;
+}
+
+.libro2:hover .imgLectura2{
+    opacity: 1;
+    border: none;
+}
+
+.libro3:hover .imgLectura2{
+    opacity: 1;
+    border: none;
+}
+
+.libro4:hover .imgLectura2{
+    opacity: 1;
+    border: none;
+}
+
+.sideAbout:hover .email{
+    background: #a59dc7;
+}
+
+
+/* GRID n1 de Sociedad.html */
+/* Corresponde a la lectura actual, texto y una foto */
+
+.containerSociedad {  
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-areas: 
+    "libro"
+    "text"
+    "foto";
+}
+
+.libro{
+    grid-area: libro; 
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mainSociedad { 
+    grid-area: text; 
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e2cba2;
+    margin: 10px;
+    padding: 2rem;
+    width: auto;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: black;
+    align-items: center;
+    align-content: center;
+}
+
+.foto{
+    grid-area: foto; 
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .containerSociedad {
+        display: grid;
+        grid-template-areas:
+        "libro text foto";    }
+}
+
+@media (min-width: 1000px) {
+    .containerSociedad {
+        display: grid;
+        grid-template-areas:
+        "libro text text foto";    }
+}
+
+
+/* GRID n2 de Sociedad.html */
+/* Corresponde a las cuatro imágenes de la lectura de Diciembre */
+
+.container {  
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-areas:
+      "libro1"
+      "libro2"
+      "libro3" 
+      "libro4";
+}
+
+.libro1 { 
+    grid-area: libro1;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d;
+    align-items: center;
+}
+  
+.libro2 {
+    grid-area: libro2; 
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d;
+    align-items: center;
+}
+
+.libro3 {
+    grid-area: libro3; 
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d;
+    align-items: center;
+}
+
+.libro4 {
+    grid-area: libro4; 
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "libro1 libro2"
+        "libro3 libro4";   }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "libro1 libro2 libro3 libro4";    }
+}
+
+
+/* GRID de Nosotros.html */
+/* Corresponde al texto de historia y al texto de contacto */
+
+.containerAbout {  
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-areas:
+      "main"
+      "side";
+}
+  
+.mainAbout { 
+    grid-area: main; 
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e2cba2;
+    margin: 10px;
+    padding: 2rem;
+    width: auto;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: black;
+    align-items: center;
+    align-content: center;
+}
+  
+.sideAbout { 
+    grid-area: side; 
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1000px) {
+    .containerAbout {
+        display: grid;
+        grid-template-areas:
+        "main side";    }
+}

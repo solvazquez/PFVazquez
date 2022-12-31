@@ -1,0 +1,43 @@
+header{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        text-align: center;
+        .logo1{
+            width: 200px;
+            border-radius: 100%;
+            margin-top: 18px;
+            margin-bottom: 18px;
+             }
+    }
+    nav{
+        width: 100%;
+        .menu{
+            background-color: white;
+            padding: 0%;
+            list-style: none;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 20px;
+            font-family: "ZenAntiqueSoft-Regular";
+            color: #1d345d;
+            .item{
+                display: inline-block !important;
+                position: relative !important;
+                font-size: 130%;
+                text-align: center !important;
+                margin-left: 10px;
+                a{
+                    color: #1d345d !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

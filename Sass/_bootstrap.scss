@@ -1,0 +1,19 @@
+@mixin margen ($arriba,$abajo,$derecha,$izquierda){
+    margin-top: $arriba;
+    margin-bottom: $abajo;
+    margin-right: $derecha;
+    margin-left: $izquierda;
+}
+
+.margenformulario{
+    @include margen(10px, 10px, 20px, 20px)
+}
+
+.titulos{
+    color: white;
+    font-weight: bolder;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-size: 50px;
+    text-align: left;
+    @include margen(20px, 20px, 20px, 20px)
+}

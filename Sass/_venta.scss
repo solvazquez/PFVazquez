@@ -1,0 +1,52 @@
+.textVenta{
+    color: white;
+    font-family: "ZenAntiqueSoft-Regular";
+    font-size: 230%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+
+.mainc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .divc{
+        margin: 5px;
+        text-align: center;
+        width: 208px;
+        color: white;
+        font-size: larger;
+        .imgc{
+            width: 208px;
+            height: 320px;
+            border:double 2px white;
+            opacity: 1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &:hover .precio{
+            background: #a59dc7;
+        }
+        .precio{
+            text-align: center;
+            width: 208px;
+            color: black;
+            font-size: large;
+            margin-bottom: none !important;
+            transition:all .3s ease-in-out;
+        }
+    }
+}
+
+.precio{
+    background-color: #e2cba2;
+    transition:all .3s ease-in-out;
+    margin-top: none !important;
+    border-radius: 30px !important;
+    color: black;
+}

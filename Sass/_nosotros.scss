@@ -1,0 +1,82 @@
+.containerAbout {  
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-template-areas:
+      "main"
+      "side";
+    .mainAbout { 
+        grid-area: main; 
+        text-align: center;
+        border-radius: 20px;
+        background-color: #e2cba2;
+        margin: 10px;
+        padding: 2rem;
+        width: auto;
+        font-family: "ZenAntiqueSoft-Regular";
+        color: black;
+        align-items: center;
+        align-content: center;
+        line-height: normal;
+        .textSociedad{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .nombreLecturaActual{
+            color:#1d345d;
+            font-family: "ZenAntiqueSoft-Regular";
+            margin-top: 10px;
+            font-size: 40px;
+        }
+        .infoSociedad2{
+            color: black;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .imgAbout{
+            border: solid 15px white;
+            border-radius: 15px;
+            width: 30%;
+            height: auto;
+            margin: 10px;
+        }
+    }
+    .sideAbout { 
+        grid-area: side; 
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        .textTrabajar{
+            color:white;
+            font-family: "ZenAntiqueSoft-Regular";
+            margin-top: none;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .email{
+            background-color: #e2cba2;
+            overflow: hidden;
+            display: inline;
+            transition:all .3s ease-in-out;
+            margin-top: 10px;
+            border-radius: 50px;
+            color: black;
+            font-family: "ZenAntiqueSoft-Regular";
+        }
+        &:hover .email{
+            background: #a59dc7;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .containerAbout {
+        display: grid;
+        grid-template-areas:
+        "main side";    }
+}

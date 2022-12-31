@@ -1,0 +1,541 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #1d345d !important;
+  font-size: large; }
+
+header {
+  display: block;
+  justify-content: space-between;
+  align-items: center; }
+  header .logo {
+    text-align: center; }
+    header .logo .logo1 {
+      width: 200px;
+      border-radius: 100%;
+      margin-top: 18px;
+      margin-bottom: 18px; }
+  header nav {
+    width: 100%; }
+    header nav .menu {
+      background-color: white;
+      padding: 0%;
+      list-style: none;
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 20px;
+      font-family: "ZenAntiqueSoft-Regular";
+      color: #1d345d; }
+      header nav .menu .item {
+        display: inline-block !important;
+        position: relative !important;
+        font-size: 130%;
+        text-align: center !important;
+        margin-left: 10px; }
+        header nav .menu .item a {
+          color: #1d345d !important;
+          text-decoration: none;
+          display: inline-block;
+          padding: 5px; }
+
+footer {
+  display: block;
+  justify-content: space-between;
+  align-items: center; }
+  footer nav {
+    width: 100%; }
+    footer nav .menu2 {
+      background-color: white;
+      list-style: none;
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 20px; }
+      footer nav .menu2 .itemfooter {
+        display: inline-block;
+        position: relative;
+        font-size: 100%;
+        text-align: center; }
+        footer nav .menu2 .itemfooter a {
+          color: #1d345d;
+          text-decoration: none;
+          display: inline-block;
+          padding: 20px; }
+
+.titulos {
+  color: white;
+  font-weight: bolder;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 50px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.imgclasicos {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 20px; }
+
+.mainc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .mainc .divc {
+    text-align: center;
+    width: 208px;
+    color: white;
+    font-size: large;
+    font-family: "ZenAntiqueSoft-Regular";
+    line-height: normal; }
+    .mainc .divc .imgc {
+      width: 208px;
+      height: 320px;
+      border: double 2px white;
+      opacity: 1;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .mainc .divc:hover .precio {
+      background: #a59dc7; }
+    .mainc .divc .precio {
+      text-align: center;
+      width: 208px;
+      color: black;
+      font-size: large;
+      transition: all .3s ease-in-out; }
+
+.precio {
+  background-color: #e2cba2;
+  transition: all .3s ease-in-out;
+  margin: none !important;
+  border-radius: 30px !important;
+  color: black;
+  line-height: normal; }
+
+.proxima {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 1rem;
+  width: 100%;
+  font-size: 20px;
+  font-family: "ZenAntiqueSoft-Regular";
+  color: white; }
+
+.link {
+  background-color: #e2cba2;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: black;
+  margin-left: 20px;
+  margin-top: 10px; }
+
+.textVenta {
+  color: white;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 230%;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  font-weight: bold; }
+
+.mainc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .mainc .divc {
+    margin: 5px;
+    text-align: center;
+    width: 208px;
+    color: white;
+    font-size: larger; }
+    .mainc .divc .imgc {
+      width: 208px;
+      height: 320px;
+      border: double 2px white;
+      opacity: 1;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .mainc .divc:hover .precio {
+      background: #a59dc7; }
+    .mainc .divc .precio {
+      text-align: center;
+      width: 208px;
+      color: black;
+      font-size: large;
+      margin-bottom: none !important;
+      transition: all .3s ease-in-out; }
+
+.precio {
+  background-color: #e2cba2;
+  transition: all .3s ease-in-out;
+  margin-top: none !important;
+  border-radius: 30px !important;
+  color: black; }
+
+.titulos {
+  color: white;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 50px;
+  margin: 20px;
+  text-align: left;
+  font-weight: bolder; }
+
+.proxima {
+  color: white;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 100%; }
+
+.containerSociedad {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  grid-template-areas: "libro" "text" "foto"; }
+  .containerSociedad .libro {
+    grid-area: libro;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .containerSociedad .libro .imgLectura {
+      border: solid 15px white;
+      border-radius: 15px;
+      width: 80%;
+      height: auto;
+      margin: 10px; }
+  .containerSociedad .mainSociedad {
+    grid-area: text;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e2cba2;
+    padding: 2rem;
+    width: auto;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: black;
+    align-items: center;
+    align-content: center;
+    line-height: normal; }
+    .containerSociedad .mainSociedad .textSociedad {
+      font-size: 30px;
+      color: white;
+      font-weight: bold; }
+    .containerSociedad .mainSociedad .nombreLecturaActual {
+      color: #1d345d;
+      font-family: "ZenAntiqueSoft-Regular";
+      margin-top: 5px;
+      margin-bottom: none !important;
+      font-size: 40px; }
+    .containerSociedad .mainSociedad .autorLecturaActual {
+      color: #1d345d;
+      font-family: "ZenAntiqueSoft-Regular";
+      margin-top: none !important;
+      font-size: 23px;
+      margin-bottom: 15px; }
+    .containerSociedad .mainSociedad .infoSociedad2 {
+      color: black;
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 18px; }
+    .containerSociedad .mainSociedad .proximaReunion {
+      text-decoration: underline;
+      font-weight: bold;
+      color: black;
+      margin-top: 40px;
+      font-size: 20px;
+      margin-bottom: 10px; }
+  .containerSociedad .foto {
+    grid-area: foto;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .containerSociedad .foto .imgLectura {
+      border: solid 15px white;
+      border-radius: 15px;
+      width: 80%;
+      height: auto;
+      margin: 10px; }
+
+@media (min-width: 800px) {
+  .containerSociedad {
+    display: grid;
+    grid-template-areas: "libro text foto"; } }
+
+@media (min-width: 1000px) {
+  .containerSociedad {
+    display: grid;
+    grid-template-areas: "libro text text foto"; } }
+
+.container {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-areas: "libro1" "libro2" "libro3"  "libro4"; }
+  .container .libro1 {
+    grid-area: libro1;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d; }
+    .container .libro1 .textProxima {
+      color: #1d345d;
+      margin-top: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "ZenAntiqueSoft-Regular"; }
+    .container .libro1 .imgLectura2 {
+      border: solid 5px white;
+      border-radius: 15px;
+      width: 70%;
+      height: auto;
+      opacity: 0.6;
+      align-self: center; }
+    .container .libro1:hover .imgLectura2 {
+      opacity: 1;
+      border: none; }
+  .container .libro2 {
+    grid-area: libro2;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d; }
+    .container .libro2 .textProxima {
+      color: #1d345d;
+      margin-top: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "ZenAntiqueSoft-Regular"; }
+    .container .libro2 .imgLectura2 {
+      border: solid 5px white;
+      border-radius: 15px;
+      width: 70%;
+      height: auto;
+      opacity: 0.6;
+      align-self: center; }
+    .container .libro2:hover .imgLectura2 {
+      opacity: 1;
+      border: none; }
+  .container .libro3 {
+    grid-area: libro3;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d; }
+    .container .libro3 .textProxima {
+      color: #1d345d;
+      margin-top: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "ZenAntiqueSoft-Regular"; }
+    .container .libro3 .imgLectura2 {
+      border: solid 5px white;
+      border-radius: 15px;
+      width: 70%;
+      height: auto;
+      opacity: 0.6;
+      align-self: center; }
+    .container .libro3:hover .imgLectura2 {
+      opacity: 1;
+      border: none; }
+  .container .libro4 {
+    grid-area: libro4;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: #1d345d; }
+    .container .libro4 .textProxima {
+      color: #1d345d;
+      margin-top: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "ZenAntiqueSoft-Regular"; }
+    .container .libro4 .imgLectura2 {
+      border: solid 5px white;
+      border-radius: 15px;
+      width: 70%;
+      height: auto;
+      opacity: 0.6;
+      align-self: center; }
+    .container .libro4:hover .imgLectura2 {
+      opacity: 1;
+      border: none; }
+
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "libro1 libro2" "libro3 libro4"; } }
+
+@media (min-width: 1000px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "libro1 libro2 libro3 libro4"; } }
+
+.margenformulario {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.mapa {
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 20px; }
+
+.ubicaciones {
+  background-color: #e2cba2;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: black;
+  font-size: large;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-weight: bold;
+  padding: 4px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.ubiinfo {
+  background-color: none;
+  color: white;
+  font-style: none;
+  margin-left: none;
+  margin-bottom: 5px;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 19px;
+  line-height: normal; }
+
+.containerAbout {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  grid-template-areas: "main" "side"; }
+  .containerAbout .mainAbout {
+    grid-area: main;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e2cba2;
+    margin: 10px;
+    padding: 2rem;
+    width: auto;
+    font-family: "ZenAntiqueSoft-Regular";
+    color: black;
+    align-items: center;
+    align-content: center;
+    line-height: normal; }
+    .containerAbout .mainAbout .textSociedad {
+      font-size: 30px;
+      color: white;
+      font-weight: bold; }
+    .containerAbout .mainAbout .nombreLecturaActual {
+      color: #1d345d;
+      font-family: "ZenAntiqueSoft-Regular";
+      margin-top: 10px;
+      font-size: 40px; }
+    .containerAbout .mainAbout .infoSociedad2 {
+      color: black;
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 18px; }
+    .containerAbout .mainAbout .imgAbout {
+      border: solid 15px white;
+      border-radius: 15px;
+      width: 30%;
+      height: auto;
+      margin: 10px; }
+  .containerAbout .sideAbout {
+    grid-area: side;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .containerAbout .sideAbout .textTrabajar {
+      color: white;
+      font-family: "ZenAntiqueSoft-Regular";
+      margin-top: none;
+      font-size: 40px;
+      margin-bottom: 15px; }
+    .containerAbout .sideAbout .email {
+      background-color: #e2cba2;
+      overflow: hidden;
+      display: inline;
+      transition: all .3s ease-in-out;
+      margin-top: 10px;
+      border-radius: 50px;
+      color: black;
+      font-family: "ZenAntiqueSoft-Regular"; }
+    .containerAbout .sideAbout:hover .email {
+      background: #a59dc7; }
+
+@media (min-width: 1000px) {
+  .containerAbout {
+    display: grid;
+    grid-template-areas: "main side"; } }
+
+.margenformulario {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.titulos {
+  color: white;
+  font-weight: bolder;
+  font-family: "ZenAntiqueSoft-Regular";
+  font-size: 50px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+@font-face {
+  font-family: "ZenAntiqueSoft-Regular";
+  src: url(./ZenAntiqueSoft-Regular.ttf); }
